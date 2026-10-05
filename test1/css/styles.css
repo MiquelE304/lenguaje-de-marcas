@@ -1,21 +1,89 @@
+html
+body{
+
+Font-size: 62,5%;  /*hack anti personas con discapacidad visual*/
+ margin: 0;
+    height: 100%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 :root{
 
+    --quasinegre:#2b1703;
+    --blanc:#ffffff;
+    --grismoltclar:#F4F4F4;
+    --vermell:#E2352A;
+    --vermellmodificat:#E2352A80;
+
+
 }
+
+
+
+*{
+box-sizing: border-box;
+
+}
+
 
 
 header{
 text-align: center;
+
 }
 
-nav{
 
-    
-    margin: auto;
+.container {
+    min-width: 700px;
+    /*Estableix el mínim de l'anchura del container*/
+    max-width: 50%;
+    /*Estableix el màxim de l'anchura del container*/
+    margin: 0 auto;
+    padding: 2rem 2rem auto auto;
+}
+
+.navegacio-principal{
+margin: 0 ;
+display:flex;
+justify-content: flex-start;
+justify-content: space-around;
+ cursor: pointer;            /* Cambia el cursor al pasar sobre el botón */
+      transition: background-color 0.3s; /* Animación al pasar el mouse */
+}
+
+.navegacio-principal a{
+
+color: var(--quasinegre);
+text-decoration: none;
+}
+
+
+
+.navegacio-principal a:hover{
+
+    color: var(--vermellmodificat);
 
 }
 
 h1{
 text-align: center;
-
+color: var(--quasinegre);
 }
 
+
+
+footer{
+     font-size: 20px;
+     text-align: center;
+     justify-content: center;
+    flex-direction: row;
+    background-color:var(--quasinegre);
+    color: var(--blanc);
+    margin:0;
+  
+}
