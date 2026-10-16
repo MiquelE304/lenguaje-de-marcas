@@ -1,89 +1,262 @@
-html
-body{
+/* ===== Colors i tipografies ===== */
+:root {
+    --quasinegre: rgb(43 23 3);
+    --blanc: rgb(255 255 255);
+    --grismoltclar: rgb(244 244 244);
+    --vermell: rgb(226 53 42);
+    --vermellmodificat: rgb(226 53 42 / 0.5);
 
-Font-size: 62,5%;  /*hack anti personas con discapacidad visual*/
- margin: 0;
-    height: 100%;
-    padding: 0;
+    --sense-serif: Verdana, Tahoma, Arial, sans-serif;
+    --amb-serif: Georgia, 'Times New Roman', serif;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+/* ===== Cos de la pàgina ===== */
+body {
+    margin: 0;
+    background-color: var(--grismoltclar);
+    color: var(--quasinegre);
+    font-family: var(--sense-serif);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Contenidor central ===== */
+.container {
+    width: 95%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Capçalera i menú ===== */
+header {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+header img {
+    width: 100px;
+}
+
+.navegacio-principal {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
-
-
-:root{
-
-    --quasinegre:#2b1703;
-    --blanc:#ffffff;
-    --grismoltclar:#F4F4F4;
-    --vermell:#E2352A;
-    --vermellmodificat:#E2352A80;
-
-
+.navegacio-principal a {
+    color: var(--quasinegre);
+    text-decoration: none;
 }
 
-
-
-*{
-box-sizing: border-box;
-
+.navegacio-principal a:hover {
+    color: var(--vermell);
 }
 
-
-
-header{
-text-align: center;
-
-}
-
-
-.container {
-    min-width: 700px;
-    /*Estableix el mínim de l'anchura del container*/
-    max-width: 50%;
-    /*Estableix el màxim de l'anchura del container*/
-    margin: 0 auto;
-    padding: 2rem 2rem auto auto;
-}
-
-.navegacio-principal{
-margin: 0 ;
-display:flex;
-justify-content: flex-start;
-justify-content: space-around;
- cursor: pointer;            /* Cambia el cursor al pasar sobre el botón */
-      transition: background-color 0.3s; /* Animación al pasar el mouse */
-}
-
-.navegacio-principal a{
-
-color: var(--quasinegre);
-text-decoration: none;
-}
-
-
-
-.navegacio-principal a:hover{
-
+.navegacio-principal a.actiu {
     color: var(--vermellmodificat);
-
 }
 
-h1{
-text-align: center;
-color: var(--quasinegre);
+/* ===== Títols ===== */
+h1 {
+    text-align: center;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    margin: 2rem 0;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
 
+h3 {
+    font-size: 1.3rem;
+}
 
-footer{
-     font-size: 20px;
-     text-align: center;
-     justify-content: center;
-    flex-direction: row;
-    background-color:var(--quasinegre);
+/* ===== Enllaços dins del contingut ===== */
+main a {
+    color: var(--vermell);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: var(--vermellmodificat);
+}
+
+/* Enllaços externs: icona a la dreta */
+a.extern::after {
+    content: "";
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.15em;
+    background-image: url("../../img/external-link.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a.extern:hover::after {
+    background-image: url("../../img/external-link-modif.svg");
+}
+
+/* ===== Autor i data (index) ===== */
+.autor {
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.autor p {
+    margin: 0;
+}
+
+/* ===== Imatges, vídeo i àudio ===== */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+figure img,
+iframe {
+    max-width: 100%;
+}
+
+.figura-audio {
+    border: 1px solid var(--quasinegre);
+    padding: 1rem;
+}
+
+/* ===== Citacions ===== */
+blockquote {
+    font-family: var(--amb-serif);
+    font-weight: 700;
+    border-top: 1px solid var(--quasinegre);
+    border-bottom: 1px solid var(--quasinegre);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+blockquote p {
+    margin: 0 0 1rem 0;
+}
+
+blockquote footer {
+    background: none;
+    color: var(--quasinegre);
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0;
+}
+
+q,
+cite {
+    font-family: var(--amb-serif);
+    font-weight: 700;
+}
+
+/* ===== Abreviatures ===== */
+abbr {
+    cursor: help;
+}
+
+/* ===== Llistes ===== */
+ul {
+    list-style-type: square;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+/* ===== Glossari ===== */
+.titolglossari {
+    border-bottom: 1px solid var(--quasinegre);
+}
+
+dl {
+    margin-left: 2rem;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+dd {
+    display: list-item;
+    list-style-type: square;
+    margin-left: 2rem;
+    font-size: 0.85rem;
+}
+
+/* ===== Biografia de l'autor (final de l'article) ===== */
+.biografia {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.biografia img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.biografia p {
+    margin: 0.2rem 0;
+}
+
+/* ===== Peu de pàgina ===== */
+body > footer {
+    width: 100%;
+    background-color: var(--quasinegre);
     color: var(--blanc);
-    margin:0;
-  
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+body > footer p {
+    margin: 0.5rem 0;
+}
+
+body > footer a,
+body > footer abbr {
+    color: var(--blanc);
+}
+
+/* ===== Mòbil ===== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        height: 220px;
+    }
 }

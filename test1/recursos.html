@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
-    <link rel="preload" href="css/styles.css" as="style">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    
-    <title>IES Sineu</title>
+    <link rel="icon" href="../img/favicon.png">
+    <title>Recursos | IES Sineu</title>
 </head>
-
+<body>
 <header>
-
-        <a href="index.html"><img src="../img/bit-logo.svg" ></a>
-  <nav> 
-        
+    <a href="index.html"><img src="../img/bit-logo.svg" alt="BIT, inici"></a>
+    <nav class="navegacio-principal">
         <a href="index.html">Article</a>
-        <a href="recursos.html">Recursos</a>
+        <a href="recursos.html" class="actiu">Recursos</a>
         <a href="glossari.html">Glossari</a>
-
     </nav>
 </header>
 
-  
-<body>
-    
-  <h1>Intel·ligències artificials musicals</h1>  
+<main class="container">
+<h1>Intel·ligències artificials musicals</h1>  
 
     <p>
         
@@ -36,7 +30,7 @@
 
     <p>
 
-        En l’àmbit musical, la IA s’ha convertir en una eina potent. Hi ha programes que són capaços de compondre melodies, generar veus, escriure lletres... Podem considerar la IA tan creativa com un músic més? Substituirà els creadors?…
+        En l’àmbit musical, la <abbr title="intel·ligència artificial">IA</abbr> s’ha convertit en una eina potent. Hi ha programes que són capaços de compondre melodies, generar veus, escriure lletres... Podem considerar la <abbr title="intel·ligència artificial">IA</abbr> tan creativa com un músic més? Substituirà els creadors?…
 
     </p>
 
@@ -48,28 +42,25 @@
     </p>
 
 
-    <section>
-
-        <p>20 segons de música generada amb Mubert</p>
-
-        <audio controls>
-  <source src="../music/intro-musical.mp3" type="audio/mp3">
-  Tu navegador no soporta el elemento de audio.
-</audio>
-
-    </section>
+    <figure class="figura-audio">
+    <figcaption>20 segons de música generada amb Mubert</figcaption>
+    <audio controls>
+        <source src="../music/intro-musical.mp3" type="audio/mpeg">
+        El teu navegador no admet l'element d'àudio.
+    </audio>
+</figure>
 
 <section>
 
-    <ul class="">
+    <ul>
 <li>Generació musical
 <ul>    
 
-    <li><a href="glossari.html#gloss-aiva" target="_self">AIVA</a></li>
+    <li><a href="glossari.html#gloss-aiva">AIVA</a></li>
 
-    <li><a href="glossari.html#gloss-soundraw" target="_self">Soundraw</a></li>
+    <li><a href="glossari.html#gloss-soundraw">Soundraw</a></li>
     
-    <li><a href="glossari.html#gloss-mubert" target="_self">Mubert</a></li>
+    <li><a href="glossari.html#gloss-mubert">Mubert</a></li>
 
     </ul>
     </li>
@@ -79,15 +70,15 @@
 
 <section>
 
-    <ul class="">
+    <ul>
 <li>Veus i cant
 <ul>    
 
-    <li><a href="glossari.html#gloss-synthesizer" target="_self">Synthesizer V</a></li>
+    <li><a href="glossari.html#gloss-synthesizer">Synthesizer V</a></li>
 
-    <li><a href="glossari.html#gloss-voicify" target="_self">Voicify AI</a></li>
+    <li><a href="glossari.html#gloss-voicify">Voicify AI</a></li>
     
-    <li><a href="glossari.html#gloss-uberduck" target="_self">Uberduck</a></li>
+    <li><a href="glossari.html#gloss-uberduck">Uberduck</a></li>
 
     </ul>
     </li>
@@ -96,15 +87,15 @@
 
 <section>
 
-    <ul class="">
+    <ul>
 <li>Producció i mescla
 <ul>    
 
-    <li><a href="glossari.html#gloss-endless" target="_self">Endless</a></li>
+    <li><a href="glossari.html#gloss-endlesss">Endlesss</a></li>
 
-    <li><a href="glossari.html#gloss-magenta" target="_self">Magenta Studio (Google)</a></li>
+    <li><a href="glossari.html#gloss-magenta">Magenta Studio (Google)</a></li>
     
-    <li><a href="glossari.html#gloss-landr" target="_self">LANDR</a></li>
+    <li><a href="glossari.html#gloss-landr">LANDR</a></li>
 
     </ul>
     </li>
@@ -114,15 +105,15 @@
 
 <section>
 
-    <ul class="">
+    <ul>
 <li>Manipulació d'àudio
 <ul>    
 
-    <li><a href="glossari.html#gloss-stemroller" target="_self">StemRoller</a></li>
+    <li><a href="glossari.html#gloss-stemroller">StemRoller</a></li>
 
-    <li><a href="glossari.html#gloss-lalala.ai" target="_self">LALALA.AI</a></li>
+    <li><a href="glossari.html#gloss-lalal.ai">LALAL.AI</a></li>
     
-    <li><a href="glossari.html#gloss-audioshake" target="_self">Audioshake</a></li>
+    <li><a href="glossari.html#gloss-audioshake">Audioshake</a></li>
 
     </ul>
     </li>
@@ -131,22 +122,25 @@
 
 <section>
 
-    <ul class="">
+    <ul>
 <li>Lletres i creativitat textual
 <ul>    
 
-    <li><a href="glossari.html#gloss-these" target="_self">These Lyrics Do Not Exist</a></li>
+    <li><a href="glossari.html#gloss-these">These Lyrics Do Not Exist</a></li>
 
-    <li><a href="glossari.html#gloss-border" target="_self">Border humans Lyrics Generator</a></li>
+    <li><a href="glossari.html#gloss-bored">Bored Humans Lyrics Generator</a></li>
     
-    <li><a href="glossari.html#gloss-chatgpt" target="_self">ChatGpt</a></li>
+    <li><a href="glossari.html#gloss-chatgpt">ChatGPT (amb <i>prompts</i> musicals)</a></li>
 
     </ul>
     </li>
 </ul>
 </section>
+</main>
 
-
-
+<footer>
+    <p>Miquel Escarrer Tortosa</p>
+    <p><abbr title="Institut d'Educació Pública de Sineu (Mallorca)">IES Sineu</abbr>, 2026 | Per a l'assignatura Llenguatge de Marques</p>
+</footer>
 </body>
 </html>
