@@ -37,6 +37,10 @@ img {
     margin-right: auto;
 }
 
+main {
+    padding-bottom: 3rem;
+}
+
 /* ===== Capçalera i menú ===== */
 header {
     text-align: center;
@@ -75,7 +79,7 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     line-height: 1.05;
-    margin: 4.4rem 0 4.1rem 0;
+    margin: 3.95rem 0 3.5rem 0;
 }
 
 h2,
@@ -159,7 +163,7 @@ iframe {
 
 .figura-audio {
     border: 1px solid var(--quasinegre);
-    padding: 1rem;
+    padding: 0.9rem;
 }
 
 /* Paràgraf destacat de l'article */
@@ -216,7 +220,7 @@ ul {
 }
 
 li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
 }
 
 ul ul {
@@ -228,7 +232,7 @@ ul ul {
 
 /* ===== Glossari ===== */
 .titolglossari {
-    margin-top: 3.5rem;
+    margin-top: 2.25rem;
     margin-bottom: 1.8rem;
     border-bottom: 1px solid var(--quasinegre);
 }
@@ -278,7 +282,7 @@ body > footer {
     color: var(--blanc);
     text-align: center;
     font-size: 0.8rem;
-    padding: 1.5rem 0;
+    padding: 2.1rem 0;
     margin: 0;
 }
 
